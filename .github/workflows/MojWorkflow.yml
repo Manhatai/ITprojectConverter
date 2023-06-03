@@ -34,7 +34,7 @@ jobs:
 
     - name: Run build script
       run: |
-        pyinstaller --onefile ProjektIT.py # replace with your actual script name
+        pyinstaller --onefile ProjektIT.py
 
     - name: Upload EXE artifact
       uses: actions/upload-artifact@v3
