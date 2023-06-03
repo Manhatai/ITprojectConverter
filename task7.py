@@ -15,6 +15,7 @@ def YMLtoXML(x, y):  # konwersja yml - xml
     print("Sukces!")
 
 def return_xml(x, data):
+    data = {"root": data} #edit 03.06, inaczej czasami wyrzuca ValueError
     xml_data = xmltodict.unparse(data)  # przekształca przekazany plik python na .xml
     with open(x, 'w') as f:
         f.write(xml_data)
