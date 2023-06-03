@@ -21,7 +21,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.11'
 
     - name: Install pip
       run: |
@@ -39,5 +39,5 @@ jobs:
     - name: Upload EXE artifact
       uses: actions/upload-artifact@v3
       with:
-        name: EXE-artifact
-        path: dist/ProjektIT.py # replace with your actual script name
+        name: ProjektIT
+        path: dist/ProjektIT.py
