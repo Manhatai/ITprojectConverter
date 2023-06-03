@@ -1,3 +1,9 @@
+import os
+import json
+import yaml
+import xmltodict
+from dicttoxml import dicttoxml
+
 print("Witaj w konwerterze plików [.xml], [.json], oraz [.yml]!")
 x = input("\nPodaj ścieżkę pliku (wraz z jego rozszerzeniem): ")
 y = input("\nPodaj ścieżkę pliku oraz rozszerzenie w jakim chciał(a) byś aby plik został zapisany: ")
